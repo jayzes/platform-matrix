@@ -1,0 +1,38 @@
+td, th {
+	text-align: center;
+}
+.optimized, .friendly, .accessible {
+	height: 50px;
+	background: #fff url('/images/check.png') no-repeat scroll center;
+}
+
+.unsupported {
+	height: 50px;
+	background: #fff url('/images/x.png') no-repeat scroll center;
+}
+
+tr.big th {
+	font-size: 18px;
+}
+
+#project_metadata {
+	padding: 20px 0;
+	clear: both;
+	height: 40px;
+}
+
+#project_metadata .pair {
+	margin: 0 10px;
+	float: left;
+	clear: none;
+}
+
+#project_metadata .title {
+	font-weight: bold;
+	padding: 5px 0;
+}
+
+a.super {
+	font-size: 80%;
+	vertical-align: top;
+}
