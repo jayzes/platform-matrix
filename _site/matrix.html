@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang='en' xml:lang='en' xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type' />
+    <link href='stylesheets/flutie.css' rel='stylesheet' type='text/css' />
+    <link href='stylesheets/application.css' rel='stylesheet' type='text/css' />
+    <title>Factory Design Labs :: Platform Support Matrix</title>
+    <style type='text/css'>
+      /*<![CDATA[*/
+        /* These are styles to make the page look nice */
+        
+        body { background-color: #dadada;}
+        .content {
+          background: #fff;
+          padding: 40px;
+          margin: 40px auto;
+          width: 880px;
+          -moz-border-radius: 16px;
+          -webkit-border-radius: 16px;
+        }
+      /*]]>*/
+    </style>
+  </head>
+  <body>
+    <div class='content'>
+      <img src='images/Blank_08.jpg' width='880px' />
+      <h1>Web Application Platform Support Matrix</h1>
+      <hr />
+      <div id='project_metadata'>
+        <div class='pair'>
+          <div class='title'>Project Name</div>
+          <div class='value'>Audi of America Brand Site Tools</div>
+        </div>
+        <div class='pair'>
+          <div class='title'>Effective Date</div>
+          <div class='value'>November 24, 2010</div>
+        </div>
+        <div class='pair'>
+          <div class='title'>Project Manager</div>
+          <div class='value'>Josh West</div>
+        </div>
+        <div class='pair'>
+          <div class='title'>Account Lead</div>
+          <div class='value'>Meghan Newlin</div>
+        </div>
+        <div class='pair'>
+          <div class='title'>Technical Lead</div>
+          <div class='value'>Jay Zeschin</div>
+        </div>
+      </div>
+      <h2 id='abstract'>Abstract</h2>
+      
+      <h2 id='methodology'>Methodology</h2>
+      
+      <h3 id='structure'>Structure</h3>
+      
+      <p>We present platforms in this document broken down by form factor (mobile or desktop), operating system, browser name, and version. Additional notes or caveats surrounding a platform will be denoted with a footnote like this <a href='#footnote-0' class='super'>[0]</a>.</p>
+      
+      <h3 id='selection'>Selection</h3>
+      
+      <p>We select browsers and platforms for inclusion in this matrix based on two primary criteria: market share and support status.<br /><table>
+        <tr>
+          <th>Market Share</th>
+          <th>Support Status</th>
+        </tr>
+        <tr>
+          <td>Evaluated by looking at historic platform usage trends (trailing 3 months from the study date) and predicted adoption rates.  Both global and site-specific trends are analyzed, with global trends coming from recognized data sources including (but not limited to) W3Counter, Statcounter, and NetMarketShare and site-specific trends coming from the appropriate deployed analytics package (Omniture, CoreMetrics, or Google Analytics).  These sources are cited as appropriate, and the resulting share percentages are presented inline in the matrix next to each platform's name.</td>
+          <td>Evaluated based on the browser vendor's current level of support for the product.  If the vendor is no longer providing updates and bugfixes for a browser, it may be impossible or infeasible to build a high-quality experience for that browser within reasonable timeline and budget constraints.</td>
+        </tr>
+      </table></p>
+      
+      <h3 id='form_factors_and_operating_systems'>Form Factors and Operating Systems</h3>
+      
+      <p>The manner by which form factors and operating systems are selected for inclusion in the matrix is generally more subjective and is determined by the business needs of a particular initiative, and specifically the relevant markets and demographics. As a general practice, any &#8220;major&#8221; form factor or operating system (one holding at least 10% of the market share in the relevant market or demographic) is included for consideration. At the time of this writing, the major operating systems for the desktop form factor are Windows XP, Vista, and 7, and Mac OS 10.6. The major operating systems for the mobile form factor are Apple&#8217;s iOS, Google&#8217;s Android, RIM&#8217;s Blackberry, and Nokia&#8217;s Symbian OS. Non-major operating systems and form factors may be chosen for inclusion for a variety of reasons, e.g. use as development platforms, publicity or partnership potential, &#8220;first-mover&#8221; advantages, corporate IT restrictions, etc.</p>
+      
+      <h3 id='browsers'>Browsers</h3>
+      
+      <p>The manner by which browsers are selected for inclusion in the matrix is more strictly-defined:</p>
+      
+      <ul>
+      <li>Generally speaking, only &#8220;major&#8221; browsers are included</li>
+      
+      <li>Similar to form factors and operating systems, a browser is considered major if it holds greater than 10% market share for any given combination of form factor and operating system. For example, the Safari browser is considered &#8220;major&#8221; even though it only has 5% market share overall because it has substantially larger market share on the Mac OS X operating system, which is itself a major platform.</li>
+      
+      <li>Non-major browsers may also be chosen for inclusion for a variety of reasons similar to those for operating systems and platforms.</li>
+      </ul>
+      
+      <h3 id='web_standards'>Web Standards</h3>
+      
+      <h3 id='modern_browsers'>&#8220;Modern&#8221; browsers</h3>
+      
+      <p>Under most circumstances, we strive to support only web browsers that are considered modern. The state of the art in web applications has progressed rapidly over the course of the last 10+ years, and as a result, many older browsers are unable to fully support the rich experiences and dynamic functionality that progressive clients and end users have come to expect. In order to continue to provide the most progressive experiences across <a href='http://googleenterprise.blogspot.com/2010/01/modern-browsers-for-modern-applications.html'>Per Google</a>, a</p>
+      
+      <h2 id='support_definitions'>Support Definitions</h2>
+      <table>
+        <tr>
+          <th />
+          <th>Optimized</th>
+          <th>Friendly</th>
+          <th>Accessible</th>
+          <th>Unsupported</th>
+        </tr>
+        <tr>
+          <td><strong>Summary</strong></td>
+          <td>The product is designed, coded, and tested specifically for an optimal experience on this platform.  This may include native applications.</td>
+          <td>The product is designed, coded, and tested with the specified platform in mind.  This may include visual enhancements and affordances geared specifically for the platform (i.e. device detection), but typically does not include a variant specifically developed for a platform.</td>
+          <td>The product has been designed, coded, and tested to be usable via the specified platform, and should not appear visibly "broken".  However, navigation may be difficult, and smaller visual cues (drop shadows, etc.) may not be pixel perfect.</td>
+          <td>The product has not been designed, coded, and tested with the specified platform in mind.  The experience may be partially or fully degraded or unavailable.  No external validation of functionality or appearance has been performed.</td>
+        </tr>
+        <tr>
+          <td><strong>Visual Appearance</strong></td>
+          <td>Full</td>
+          <td>Full</td>
+          <td>Should not be visibly broken, but may not be pixel-perfect<br />Ex. drop shadows, rounded corners</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td><strong>Functionality</strong></td>
+          <td>Full, potentially native</td>
+          <td>Full</td>
+          <td>Present but may be suboptimal<br />Ex. navigation, button and link sizes</td>
+          <td>Unknown</td>
+        </tr>
+        <tr>
+          <td><strong>Device-specific Optimizations</strong></td>
+          <td>Full, potentially native</td>
+          <td>Maybe</td>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <td><strong>Validation/Verification Performed?</strong></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Maybe</td>
+          <td>None performed</td>
+        </tr>
+        
+        
+      </table>
+      <h3 id='browserspecific_notes'>Browser-specific notes</h3>
+      
+      <p>Chrome and Safari use identical rendering engines, so limited testing is required to ensure compatibility across these platforms. In addition, while Google has been aggressively updating Chrome, resulting in a large number of major new releases in a very short period of time, Chrome has an aggressive built-in update mechanism that makes the likelihood of encountering an instance more than one major version out of date in the wild very unlikely.</p>
+      
+      <h2 id='analysis'>Analysis</h2>
+      
+      <p>This is our analysis</p>
+      <hr />
+      <table>
+        <tbody>
+          <tr class='big'>
+            <th colspan='5'>Platform</th>
+            <th colspan='2'>Share</th>
+            <th colspan='5'>Support Status</th>
+          </tr>
+          <tr>
+            <th>Form Factor</th>
+            <th>OS</th>
+            <th>Browser</th>
+            <th>Version</th>
+            <th>Release Date</th>
+            <th>Market Share</th>
+            <th>Site Penetration</th>
+            <th>Supported by Vendor</th>
+            <th>Optimized</th>
+            <th>Friendly</th>
+            <th>Accessible</th>
+            <th>Unsupported</th>
+          </tr>
+          <tr>
+            <td rowspan='17'>Desktop</td>
+            <td rowspan='6'>Mac OS X</td>
+            <td rowspan='2'>Firefox</td>
+            <td>4 (Beta)</td>
+            <td>November 2010</td>
+            <td></td>
+            <td></td>
+            <td>No</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>3.6</td>
+            <td>January 2010</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td class='optimized'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Chrome</td>
+            <td>8</td>
+            <td>December 2010</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td class='optimized'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>October 2010</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td class='optimized'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Safari</td>
+            <td>5</td>
+            <td>June 2010</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td class='optimized'></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Opera</td>
+            <td>10.63</td>
+            <td>October 2010</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td rowspan='11'>Windows</td>
+            <td rowspan='4'>Internet Explorer</td>
+            <td>9 (beta)</td>
+            <td>September 2010</td>
+            <td></td>
+            <td></td>
+            <td>No</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>March 2009</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td class='friendly'></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>October 2006</td>
+            <td></td>
+            <td></td>
+            <td>Yes</td>
+            <td></td>
+            <td class='friendly'></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>August 2001</td>
+            <td></td>
+            <td></td>
+            <td>No</td>
+            <td></td>
+            <td></td>
+            <td class='accessible'></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Firefox</td>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>3.6</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='friendly'></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Chrome</td>
+            <td>8</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Safari</td>
+            <td>5</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>Opera</td>
+            <td>10.63</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td rowspan='8'>Mobile</td>
+            <td rowspan='2'>iOS</td>
+            <td rowspan='2'>Mobile Safari</td>
+            <td>4.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='accessible'></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='accessible'></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Android</td>
+            <td rowspan='2'>Native Browser</td>
+            <td>2.2</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='accessible'></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>2.1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Blackberry</td>
+            <td>RIM Browser</td>
+            <td>N/A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>Opera</td>
+            <td>N/A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td rowspan='2'>Symbian</td>
+            <td>Native Browser</td>
+            <td>N/A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+          <tr>
+            <td>Opera</td>
+            <td>N/A</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class='unsupported'></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class='footer clearfix'>
+        <p>copyright 2010 factory design labs.  all rights reserved.</p>
+      </div>
+    </div>
+  </body>
+</html>

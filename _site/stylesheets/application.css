@@ -3,12 +3,12 @@ td, th {
 }
 .optimized, .friendly, .accessible {
 	height: 50px;
-	background: #fff url('/images/check.png') no-repeat scroll center;
+	background: #fff url('../images/check.png') no-repeat scroll center;
 }
 
 .unsupported {
 	height: 50px;
-	background: #fff url('/images/x.png') no-repeat scroll center;
+	background: #fff url('../images/x.png') no-repeat scroll center;
 }
 
 tr.big th {
@@ -35,4 +35,9 @@ tr.big th {
 a.super {
 	font-size: 80%;
 	vertical-align: top;
+}
+
+.footer {
+	color: #929397;
+	font-size: 0.8em;
 }
